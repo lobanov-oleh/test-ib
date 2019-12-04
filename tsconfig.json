@@ -1,6 +1,7 @@
 {
     "compilerOptions": {
         "target": "ES6",
+        "esModuleInterop": true,
         "module": "commonjs",
         "noEmitOnError": true,
         "noImplicitAny": false,
