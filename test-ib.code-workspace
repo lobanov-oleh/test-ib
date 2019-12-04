@@ -4,5 +4,14 @@
 			"path": "."
 		}
 	],
-	"settings": {}
+	"settings": {
+		"editor.tabSize": 2,
+		"editor.detectIndentation": false,
+		"eslint.validate": [
+			"typescript",
+			"typescriptreact"
+    ],
+    "typescript.format.insertSpaceBeforeFunctionParenthesis": true,
+		"typescript.tsdk": "node_modules/typescript/lib"
+	}
 }
