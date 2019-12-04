@@ -1,4 +1,5 @@
-import PatientModel, { Patient } from '../models/patient.model'
+import mongoose from 'mongoose'
+import PatientModel, { Patient, EnumConsent } from '../models/patient.model'
 
 async function CreatePatient ({
   cardNumber,
@@ -33,13 +34,18 @@ async function CreatePatient ({
     mobilePhone
   })
     .then((data: Patient) => {
-      return data;
+      return data
     })
     .catch((error: Error) => {
-      throw error;
+      throw error
     });
 }
 
+function FindConsonants (cb: (err: any, res: Patient[]) => void): mongoose.Query<Patient[]> {
+  return PatientModel.find({ CONSENT: EnumConsent.Y }, {}, cb)
+}
+
 export default {
-  CreatePatient
+  CreatePatient,
+  FindConsonants
 }

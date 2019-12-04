@@ -42,7 +42,7 @@ const load = (): void => {
 
       const [MM, DD, YYYY] = dateOfBirth.split('/')
 
-      const patient = await PatientRepository.CreatePatient({
+      await PatientRepository.CreatePatient({
         cardNumber,
         memberID,
         firstName,

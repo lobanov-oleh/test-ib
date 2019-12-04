@@ -13,4 +13,4 @@ const EmailSchema: Schema = new Schema({
   body: { type: String, required: true }
 })
 
-export default mongoose.model<Email>('Email', EmailSchema)
+export default mongoose.model<Email>('EMAIL', EmailSchema)

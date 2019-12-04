@@ -9,6 +9,7 @@
   },
   "scripts": {
     "load": "node dist/load.js",
+    "emails": "node dist/emails.js",
     "build": "tsc",
     "pretest": "npm run build",
     "test": "eslint src/*.ts src/**/*.ts"

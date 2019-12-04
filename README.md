@@ -29,3 +29,9 @@ npm run load
 ```
 
 **Note:** The flat file is in `./data/test.dat` by default. The path to the file is specified in `.env`.
+
+## Schedule emails
+
+```
+npm run emails
+```
