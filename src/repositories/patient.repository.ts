@@ -38,7 +38,7 @@ async function CreatePatient ({
     })
     .catch((error: Error) => {
       throw error
-    });
+    })
 }
 
 function FindConsonants (cb: (err: any, res: Patient[]) => void): mongoose.Query<Patient[]> {

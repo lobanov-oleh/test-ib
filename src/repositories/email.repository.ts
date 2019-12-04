@@ -22,7 +22,7 @@ async function CreateEmail ({
     })
     .catch((error: Error) => {
       throw error
-    });
+    })
 }
 
 export default {
