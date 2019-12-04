@@ -8,20 +8,22 @@
     "url": "git@github.com:lobanov-oleh/test-ib.git"
   },
   "scripts": {
-    "start": "node dist/main.js",
+    "load": "node dist/load.js",
     "build": "tsc",
     "pretest": "npm run build",
-    "test": "eslint src/**/*.ts"
+    "test": "eslint src/*.ts src/**/*.ts"
   },
   "dependencies": {
     "bluebird": "^3.7.2",
     "dotenv": "^8.2.0",
+    "event-stream": "^4.0.1",
     "mongoose": "^5.7.13",
     "winston": "^3.2.1"
   },
   "devDependencies": {
     "@types/bluebird": "^3.5.29",
     "@types/dotenv": "^8.2.0",
+    "@types/event-stream": "^3.3.34",
     "@types/mongoose": "^5.5.32",
     "@types/winston": "^2.4.4",
     "@typescript-eslint/eslint-plugin": "^2.3.3",

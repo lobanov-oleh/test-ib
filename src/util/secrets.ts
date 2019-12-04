@@ -22,3 +22,5 @@ if (!MONGODB_URI) {
   }
   process.exit(1)
 }
+
+export const DATA_PATH = process.env.DATA_PATH
